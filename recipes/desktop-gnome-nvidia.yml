@@ -19,6 +19,7 @@ modules:
       PRETTY_NAME: VexOS for Nvidia (FROM Bazzite)
 
   - from-file: module-recipes/files.yml
+  - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/dnf.yml
   - from-file: module-recipes/code.yml
   - from-file: module-recipes/default-flatpaks.yml
