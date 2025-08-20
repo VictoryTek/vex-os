@@ -1,43 +1,75 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Vex-OS  [![bluebuild build badge](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml/badge.svg)](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Custom Fedora Atomic (ostree native container) image built with [BlueBuild](https://blue-build.org), based on the Bazzite GNOME variants and personalized with tooling, Flatpaks, GNOME extensions, theming, and wallpapers.
 
-After setup, it is recommended you update this README to describe your custom image.
+![Vex OS Screenshot](./vex-screenshot1.png)
 
-## Installation
+## Variants
+- `vex-os-gnome` (standard GNOME)
+- `vex-os-gnome-nvidia` (includes NVIDIA stack)
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+## Features (short list)
+- Developer + container tools (Docker, buildah, skopeo, virtualization group)
+- VS Code, Ghostty, Starship
+- Curated Flatpaks (Brave, LibreWolf, Bitwarden, etc.)
+- GNOME extensions (Dash to Dock, Wallpaper Slideshow, more)
+- Branded wallpapers with light/dark pairing & defaults
+- Signed images (cosign)
 
-To rebase an existing atomic Fedora installation to the latest build:
+## Rebase / Install
+> Uses the [experimental native container](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) flow.
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-gnome-nvidia:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-gnome-nvidia:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+Pick ONE variant (standard or NVIDIA) and substitute below.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
-
-## Verification
-
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
-
-```bash
-cosign verify --key cosign.pub ghcr.io/blue-build/template
+1. Rebase first to the UNSIGNED image (installs trust policy + keys inside the image):
 ```
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-gnome:latest
+```
+OR (NVIDIA):
+```
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-gnome-nvidia:latest
+```
+2. Reboot:
+```
+systemctl reboot
+```
+3. Rebase to the SIGNED image:
+```
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome:latest
+```
+OR (NVIDIA):
+```
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome-nvidia:latest
+```
+4. Reboot again:
+```
+systemctl reboot
+```
+
+The `latest` tag tracks the newest build, but the Fedora release stays fixed to what the recipe specifies until manually changed.
+
+## Updating
+Stay on the same variant:
+```
+sudo rpm-ostree upgrade
+```
+Or explicitly rebase again (helpful if you changed channels):
+```
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome:latest
+```
+
+## Verification (Supply Chain)
+Images are signed with [cosign](https://github.com/sigstore/cosign). Verify (example for NVIDIA):
+```
+cosign verify --key cosign.pub ghcr.io/victorytek/vex-os-gnome-nvidia:latest
+```
+Expect a successful signature from the maintained key in `cosign.pub`.
+
+## ISO (Optional)
+If you want an installable ISO, follow the upstream guide: https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso (hosting large ISOs isn’t included here).
+
+## Credits
+Built on the BlueBuild ecosystem and ublue-os Bazzite base. 
+
+---
+Minimal README kept intentionally short; open the recipe files under `recipes/` for full details.
