@@ -1,0 +1,5 @@
+type: wallpapers
+source: local
+default:
+  wallpaper-light-dark:
+    - vex-bb-light.jxl + vex-bb-dark.jxl
