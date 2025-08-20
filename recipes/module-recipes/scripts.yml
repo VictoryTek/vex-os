@@ -1,3 +1,3 @@
 type: script
 scripts:
-  - install-nix.sh
+  - 01-install-nix.sh
