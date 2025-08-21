@@ -31,7 +31,7 @@ modules:
         - tailscale
         - trayscale
         - tmux
-  - policycoreutils-python-utils                       # semanage/restorecon for Nix SELinux labeling
+        - policycoreutils-python-utils                       # semanage/restorecon for Nix SELinux labeling
 
         # GNOME & Theming
         - bibata-cursor-themes                                 # peterwu/rendezvous
