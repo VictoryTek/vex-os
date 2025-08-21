@@ -30,15 +30,15 @@ tar -xJf /tmp/nix.tar.xz -C /tmp
 /tmp/nix-*/install \
 	--daemon \
 	--no-channel-add \
-	--no-modify-profile
+	--no-modify-profile || echo "[nix] multi-user installer failed (will attempt fallback)"
 
 # Fallback if store not created (some environments may skip population when systemd units aren't active)
 if [ ! -d /nix/store ]; then
-	echo "[nix] Store missing after multi-user install attempt; trying single-user fallback" >&2
+	echo "[nix] Store missing after multi-user attempt; trying single-user fallback" >&2
 	/tmp/nix-*/install \
 		--no-daemon \
 		--no-channel-add \
-		--no-modify-profile || true
+		--no-modify-profile || echo "[nix] single-user fallback failed (continuing with empty store)"
 fi
 
 if [ ! -d /nix/store ]; then

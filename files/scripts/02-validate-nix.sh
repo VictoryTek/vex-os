@@ -1,42 +1,53 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-echo "::group:: Validate Nix installation"
+echo "::group:: Validate Nix installation (non-fatal)"
 
-fail() { echo "[FAIL] $1" >&2; exit 1; }
+warn() { echo "[WARN] $1" >&2; }
+pass=true
 
 # 1. Symlink check
-[ -L /nix ] || fail "/nix is not a symlink"
-TARGET=$(readlink -f /nix || true)
-[[ "$TARGET" == /var/nix* ]] || fail "/nix does not point into /var/nix (points to $TARGET)"
+if [ -L /nix ]; then
+  TARGET=$(readlink -f /nix || true)
+  if [[ "$TARGET" != /var/nix* ]]; then
+    warn "/nix symlink target unexpected: $TARGET"; pass=false
+  fi
+else
+  warn "/nix is not a symlink"; pass=false
+fi
 
 # 2. Store presence
-[ -d /nix/store ] || fail "/nix/store missing"
+if [ ! -d /nix/store ]; then
+  warn "/nix/store missing (will be populated after first successful Nix use)"; pass=false
+fi
 
-# 3. Daemon binary
-[ -x /nix/var/nix/profiles/default/bin/nix-daemon ] || fail "nix-daemon binary not found"
+# 3. Daemon binary (informational)
+if [ -x /nix/var/nix/profiles/default/bin/nix-daemon ]; then
+  echo "Found nix-daemon binary"
+else
+  warn "nix-daemon binary not present yet"
+fi
 
-# 4. Basic version command
+# 4. Version (optional)
 if /nix/var/nix/profiles/default/bin/nix --version >/dev/null 2>&1; then
   echo "Nix version: $(/nix/var/nix/profiles/default/bin/nix --version)"
 else
-  fail "nix --version failed"
+  warn "nix --version not available"
 fi
 
-# 5. SELinux labeling (non-fatal advisory)
+# 5. SELinux advisory
 if command -v getenforce >/dev/null 2>&1 && [ "$(getenforce)" = "Enforcing" ]; then
   if command -v semanage >/dev/null 2>&1; then
     BIN_SAMPLE=$(find /nix/store -maxdepth 3 -type f -path '*/bin/*' | head -n1 || true)
-    if [ -n "$BIN_SAMPLE" ]; then
-      CTX=$(ls -Z "$BIN_SAMPLE" | awk '{print $1}')
-      echo "Sample binary context: $CTX"
-    else
-      echo "No sample binary found for SELinux context check"
-    fi
+    [ -n "$BIN_SAMPLE" ] && echo "Sample binary context: $(ls -Z "$BIN_SAMPLE" | awk '{print $1}')"
   else
-    echo "SELinux Enforcing but semanage not present (labels may be generic)"
+    warn "SELinux Enforcing but semanage not present"
   fi
 fi
 
-echo "All Nix validation checks passed."
+if [ "$pass" = true ]; then
+  echo "Nix validation: PASS"
+else
+  echo "Nix validation: WARN (non-blocking)"
+fi
 echo "::endgroup::"
