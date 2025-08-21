@@ -1,12 +1,13 @@
 [Unit]
-Description=Overlay filesystem for /nix
+Description=Bind mount backing store for /nix (optional)
 Documentation=man:mount(8)
-DefaultDependencies=no
-After=var.mount
-BindsTo=var.mount
+After=local-fs.target
 
 [Mount]
-What=overlay
+What=/var/lib/nix
 Where=/nix
-Type=overlay
-Options=workdir=/var/usrlocal/nixfs/work,upperdir=/var/usrlocal/nixfs/upper,lowerdir=/usr/nix
+Type=none
+Options=bind
+
+[Install]
+WantedBy=local-fs.target

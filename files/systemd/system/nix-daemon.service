@@ -1,15 +1,11 @@
 [Unit]
 Description=Nix Daemon
 Documentation=man:nix-daemon https://nixos.org/manual
-RequiresMountsFor=/nix/store
-RequiresMountsFor=/nix/var
-RequiresMountsFor=/nix/var/nix/db
-ConditionPathIsReadWrite=/nix/var/nix/daemon-socket
-After=nix.mount
-BindsTo=nix.mount
+After=network.target
+ConditionPathIsDirectory=/nix/store
 
 [Service]
-ExecStart=$(find /nix/store -name nix-daemon | grep '/bin/nix-daemon$' | head -n 1) nix-daemon --daemon
+ExecStart=/nix/var/nix/profiles/default/bin/nix-daemon --daemon
 KillMode=process
 LimitNOFILE=1048576
 TasksMax=1048576
