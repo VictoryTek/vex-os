@@ -30,8 +30,22 @@ tar -xJf /tmp/nix.tar.xz -C /tmp
 /tmp/nix-*/install \
 	--daemon \
 	--no-channel-add \
-	--no-modify-profile \
-	--systemd-units no
+	--no-modify-profile
+
+# Fallback if store not created (some environments may skip population when systemd units aren't active)
+if [ ! -d /nix/store ]; then
+	echo "[nix] Store missing after multi-user install attempt; trying single-user fallback" >&2
+	/tmp/nix-*/install \
+		--no-daemon \
+		--no-channel-add \
+		--no-modify-profile || true
+fi
+
+if [ ! -d /nix/store ]; then
+	echo "[nix] Creating minimal empty store structure manually" >&2
+	mkdir -p /nix/store
+	mkdir -p /nix/var/nix/{db,gcroots,profiles,temproots,userpool,daemon-socket}
+fi
 
 # Stable profile symlink (inside symlinked tree)
 ln -snf /nix/var/nix/profiles/default /nix/profile
