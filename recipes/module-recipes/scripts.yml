@@ -1,4 +1,4 @@
 type: script
 scripts:
   - 01-install-nix.sh
-  #- 02-purge-waydroid.sh
+  - 02-purge-waydroid.sh
