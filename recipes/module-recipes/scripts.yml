@@ -1,5 +1,4 @@
 type: script
 scripts:
-  - 01-install-nix.sh
-  - 02-validate-nix.sh
+  - 01-nix-bootstrap-prepare.sh
   - 03-purge-waydroid.sh
