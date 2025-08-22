@@ -1,4 +1,4 @@
 type: script
 scripts:
-  - 01-nix-bootstrap-prepare.sh
+  #- 01-nix-bootstrap-prepare.sh
   - 03-purge-waydroid.sh
