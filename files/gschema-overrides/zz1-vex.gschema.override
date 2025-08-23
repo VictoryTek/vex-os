@@ -4,3 +4,29 @@
 # GDM Login Logo
 [org.gnome.login-screen]
 logo='/usr/share/pixmaps/vex.png'
+
+# Gnome Settings
+[org.gnome.desktop.interface]
+color-scheme='prefer-dark'
+accent-color='teal'
+icon-theme='kora'
+#icon-theme='Flat-Remix-Teal-Dark'
+cursor-theme='Bibata-Modern-Classic'
+cursor-size=24
+
+[org.gnome.settings-daemon.plugins.power]
+sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
+
+[org.gnome.desktop.screensaver]
+lock-enabled=false
+
+# Dock Settings
+[org.gnome.shell]
+disable-user-extensions=false
+enabled-extensions=['AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'logowidget@github.com.howbea', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'nothing-to-say@extensions.gnome.wouter.bolsterl.ee', 'steal-my-focus-window@steal-my-focus-window', 'tilingshell@ferrarodomenico.com']
+favorite-apps=['com.brave.Browser.desktop', 'io.gitlab.librewolf-community.desktop', 'org.gnome.Nautilus.desktop', 'com.mitchellh.ghostty.desktop', 'wezterm.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'com.vscodium.codium.desktop', 'com.discordapp.Discord.desktop']
+
+[org.gnome.shell.extensions.dash-to-dock]
+dock-position='LEFT'
+
