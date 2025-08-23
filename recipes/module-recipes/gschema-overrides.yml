@@ -3,4 +3,4 @@
 modules:
   - type: gschema-overrides
     include:
-    - zz1-gschema.override
+    - zz1-vex.gschema.override
