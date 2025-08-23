@@ -2,3 +2,5 @@ type: script
 scripts:
   #- 01-nix-bootstrap-prepare.sh
   - 03-purge-waydroid.sh
+  - 04-kora-icon-theme.sh
+  #- 05-starship.sh
