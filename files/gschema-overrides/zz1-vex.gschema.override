@@ -14,11 +14,7 @@ icon-theme='kora'
 cursor-theme='Bibata-Modern-Classic'
 cursor-size=24
 
-#[org.gnome.shell.extensions.logo-widget]
-#logo-file='/usr/share/pixmaps/vex.png'
-#logo-file-dark='/usr/share/pixmaps/vex.png'
-
-[org.gnome.shell.extensions.desktop-logo]
+[org.gnome.shell.extensions.logo-widget]
 logo-file='/usr/share/pixmaps/vex.png'
 logo-file-dark='/usr/share/pixmaps/vex.png'
 
