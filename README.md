@@ -2,7 +2,11 @@
 
 Custom Fedora Atomic (ostree native container) image built with [BlueBuild](https://blue-build.org), based on the Bazzite GNOME variants and personalized with tooling, Flatpaks, GNOME extensions, theming, and wallpapers.
 
-![Vex OS Screenshot](./vex-screenshot1.png)
+## Screenshots
+<p align="center">
+	<a href="./vex-screenshot1.png" title="Desktop Light"><img src="./vex-screenshot1.png" alt="Vex OS desktop screenshot (light)" width="48%"/></a>
+	<a href="./vex-screenshot2.png" title="Desktop Dark"><img src="./vex-screenshot2.png" alt="Vex OS desktop screenshot (dark)" width="48%"/></a>
+</p>
 
 ## Variants
 - `vex-os-gnome` (standard GNOME)
