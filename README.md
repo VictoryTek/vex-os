@@ -4,8 +4,8 @@ Custom Fedora Atomic (ostree native container) image built with [BlueBuild](http
 
 ## Screenshots
 <p align="center">
-	<a href="./vex-screenshot1.png" title="Desktop Light"><img src="./vex-screenshot1.png" alt="Vex OS desktop screenshot (light)" width="48%"/></a>
-	<a href="./vex-screenshot2.png" title="Desktop Dark"><img src="./vex-screenshot2.png" alt="Vex OS desktop screenshot (dark)" width="48%"/></a>
+	<a href="./vex-screenshot1.jpg" title="Desktop Light"><img src="./vex-screenshot1.jpg" alt="Vex OS desktop screenshot (light)" width="48%"/></a>
+	<a href="./vex-screenshot2.jpg" title="Desktop Dark"><img src="./vex-screenshot2.jpg" alt="Vex OS desktop screenshot (dark)" width="48%"/></a>
 </p>
 
 ## Variants
