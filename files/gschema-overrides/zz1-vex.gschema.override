@@ -14,6 +14,10 @@ icon-theme='kora'
 cursor-theme='Bibata-Modern-Classic'
 cursor-size=24
 
+[org.gnome.shell.extensions.desktop-logo]
+logo-file='/usr/share/pixmaps/vex.png.png'
+logo-file-dark='/usr/share/pixmaps/vex.png.png'
+
 [org.gnome.settings-daemon.plugins.power]
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
@@ -29,4 +33,3 @@ favorite-apps=['com.brave.Browser.desktop', 'io.gitlab.librewolf-community.deskt
 
 [org.gnome.shell.extensions.dash-to-dock]
 dock-position='LEFT'
-
