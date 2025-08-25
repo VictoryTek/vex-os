@@ -1,5 +1,6 @@
 type: script
 scripts:
-  - 03-purge-waydroid.sh
-  - 04-kora-icon-theme.sh
-  #- 05-starship.sh
+  - 01-purge-waydroid.sh
+  - 02-kora-icon-theme.sh
+  - 03-autostart.sh
+  #- 04-starship.sh
