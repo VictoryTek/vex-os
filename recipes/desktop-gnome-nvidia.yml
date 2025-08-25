@@ -17,6 +17,7 @@ modules:
       NAME: Vex-OS
       ID: vex_os
       PRETTY_NAME: VexOS for Nvidia (FROM Bazzite)
+      LOGO: vex.png
 
   - from-file: module-recipes/files.yml
   - from-file: module-recipes/scripts.yml
