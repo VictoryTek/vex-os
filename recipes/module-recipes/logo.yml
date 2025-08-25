@@ -1,0 +1,9 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+modules:
+  - type: copy
+    src: "files/system/usr/share/pixmaps/vex.png"
+    dest: "/usr/share/icons/hicolor/scalable/apps/vex.png"
+  - type: copy
+    src: "files/system/usr/share/pixmaps/vex.png"
+    dest: "/usr/share/icons/hicolor/48x48/apps/vex.png"
