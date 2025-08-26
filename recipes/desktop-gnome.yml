@@ -16,6 +16,7 @@ modules:
     properties:
       NAME: Vex-OS
       ID: vex_os
+      ID_LIKE: bazzite
       PRETTY_NAME: VexOS (FROM Bazzite)
       LOGO: vex.png
 
