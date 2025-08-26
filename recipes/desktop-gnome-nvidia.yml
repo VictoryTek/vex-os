@@ -12,9 +12,16 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: os-release
+    properties:
+      NAME: Vex-OS
+      ID: bazzite
+      ID_LIKE: fedora
+      PRETTY_NAME: VexOS for Nvidia (FROM Bazzite)
+      LOGO: vex.png
 
   - from-file: module-recipes/files.yml
-  - from-file: module-recipes/os-release-nvidia.yml
+  - from-file: module-recipes/logo.yml
   - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/dnf.yml
   - from-file: module-recipes/code.yml
@@ -23,6 +30,7 @@ modules:
   - from-file: module-recipes/wallpapers.yml
   - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/gschema-overrides.yml
+  - from-file: module-recipes/bling.yml
   
   - type: initramfs
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
