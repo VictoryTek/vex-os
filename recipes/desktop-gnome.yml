@@ -12,14 +12,9 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: os-release
-    properties:
-      NAME: Vex-OS
-      ID: vex_os
-      PRETTY_NAME: VexOS (FROM Bazzite)
-      LOGO: vex.png
 
   - from-file: module-recipes/files.yml
+  - from-file: module-recipes/os-release.yml
   - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/dnf.yml
   - from-file: module-recipes/code.yml
