@@ -15,8 +15,8 @@ modules:
   - type: os-release
     properties:
       NAME: Vex-OS
-      ID: vex_os
-      ID_LIKE: bazzite
+      ID: bazzite
+      ID_LIKE: fedora
       PRETTY_NAME: VexOS for Nvidia (FROM Bazzite)
       LOGO: vex.png
 
