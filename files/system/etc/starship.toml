@@ -1,3 +1,7 @@
+# System-wide Starship configuration for VexOS
+# Users can override by setting STARSHIP_CONFIG in their shell rc.
+# (Copied from skel template)
+
 ## FIRST LINE/ROW: Info & Status
 # First param ─┌
 [username]
@@ -34,7 +38,6 @@ deleted = "x"
 min_time = 1
 format = "took [$duration]($style)"
 disabled = false
-
 
 ## SECOND LINE/ROW: Prompt
 # Somethere at the beginning
