@@ -27,7 +27,7 @@ modules:
         - fastfetch
         - gimp
         - inxi
-        - plymouth-plugin-script
+        #- plymouth-plugin-script
         - tailscale
         - trayscale
         - tmux
