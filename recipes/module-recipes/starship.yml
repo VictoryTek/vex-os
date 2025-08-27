@@ -3,4 +3,4 @@
 modules:
   - type: copy
     src: "files/system/etc/skel/starship.toml"
-    dest: "~/.config/starship.yml"
+    dest: ".config/starship.yml"
