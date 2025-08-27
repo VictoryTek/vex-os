@@ -9,10 +9,11 @@ Custom Fedora Atomic (ostree native container) image built with [BlueBuild](http
 </p>
 
 ## Variants
-- `vex-os-gnome` (standard GNOME)
-- `vex-os-gnome-nvidia` (includes NVIDIA stack)
+- `vex-os` (standard GNOME)
+- `vex-os-nvidia` (standard GNOME includes NVIDIA stack)
 
 ## Features (short list)
+- Gnome DE (I dont like KDE) (maybe Cosmic in the future)
 - Developer + container tools (Docker, buildah, skopeo, virtualization group)
 - VS Code, Ghostty, Starship
 - Curated Flatpaks (Brave, LibreWolf, Bitwarden, etc.)
@@ -27,11 +28,11 @@ Pick ONE variant (standard or NVIDIA) and substitute below.
 
 1. Rebase first to the UNSIGNED image (installs trust policy + keys inside the image):
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-gnome:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os:latest
 ```
 OR (NVIDIA):
 ```
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-gnome-nvidia:latest
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-nvidia:latest
 ```
 2. Reboot:
 ```
@@ -39,11 +40,11 @@ systemctl reboot
 ```
 3. Rebase to the SIGNED image:
 ```
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome:latest
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os:latest
 ```
 OR (NVIDIA):
 ```
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome-nvidia:latest
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-nvidia:latest
 ```
 4. Reboot again:
 ```
@@ -59,7 +60,7 @@ sudo rpm-ostree upgrade
 ```
 Or explicitly rebase again (helpful if you changed channels):
 ```
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-gnome:latest
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os:latest
 ```
 
 ## Verification (Supply Chain)
