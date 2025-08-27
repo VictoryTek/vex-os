@@ -13,9 +13,9 @@ generate-iso-vex-os:
     bluebuild generate-iso --iso-name vex-os-42.iso image ghcr.io/victorytek/vex-os:latest
     echo "ISO generated successfully in ~/iso/"
 
-# Generate ISO for KompassOS DX HWE Nvidia
+# Generate ISO for VexOS Nvidia
 [group('Apps')]
-generate-iso-kompassos-dx-hwe-nvidia:
+generate-iso-vex-os-nvidia:
     #!/usr/bin/env bash
     set -euo pipefail
     echo "Creating ISO directory..."
@@ -23,5 +23,5 @@ generate-iso-kompassos-dx-hwe-nvidia:
     echo "Changing to ISO directory..."
     cd ~/iso
     echo "Generating ISO..."
-    sudo bluebuild generate-iso --iso-name vex-os-42-nvidia.iso image ghcr.io/victorytek/vex-os-nvidia:latest
+    bluebuild generate-iso --iso-name vex-os-42-nvidia.iso image ghcr.io/victorytek/vex-os-nvidia:latest
     echo "ISO generated successfully in ~/iso/"

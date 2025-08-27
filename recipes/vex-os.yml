@@ -20,6 +20,7 @@ modules:
   - from-file: module-recipes/code.yml
   - from-file: module-recipes/default-flatpaks.yml
   - from-file: module-recipes/gnome-extensions.yml
+  - from-file: module-recipes/just.yml
   - from-file: module-recipes/wallpapers.yml
   - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/gschema-overrides.yml
