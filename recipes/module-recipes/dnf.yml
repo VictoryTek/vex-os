@@ -27,11 +27,9 @@ modules:
         - fastfetch
         - gimp
         - inxi
-        #- plymouth-plugin-script
         - tailscale
         - trayscale
         - tmux
-        #- policycoreutils-python-utils                       # semanage/restorecon for Nix SELinux labeling
 
         # GNOME & Theming
         - bibata-cursor-themes                                 # peterwu/rendezvous
@@ -60,6 +58,5 @@ modules:
     group-install:
       with-optional: true
       packages:
-        # Virtualization
         - virtualization
 
