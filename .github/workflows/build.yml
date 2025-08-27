@@ -27,8 +27,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - desktop-gnome-nvidia.yml
-          - desktop-gnome.yml
+          - vex-os-nvidia.yml
+          - vex-os.yml
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
