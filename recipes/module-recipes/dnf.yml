@@ -35,6 +35,7 @@ modules:
         - bibata-cursor-themes                                 # peterwu/rendezvous
         - flat-remix-icon-theme
         - gnome-session-xsession
+        - gnome-shell-extension-background-logo
         - gnome-tweaks
 
         # Terminal & Shell Enhancements
