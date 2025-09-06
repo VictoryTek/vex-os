@@ -5,7 +5,6 @@ modules:
     install:
       - Alphabetical App Grid
       - Dash to Dock
-      - Background Logo
       - Gnome 4x UI Improvements
       - Nothing to say
       - Quick Settings Tweaks
