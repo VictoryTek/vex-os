@@ -25,7 +25,6 @@ modules:
         - blivet-gui
         - cockpit
         - fastfetch
-        #- gimp
         - inxi
         - tailscale
         - trayscale
