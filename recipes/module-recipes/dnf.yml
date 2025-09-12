@@ -26,6 +26,7 @@ modules:
         - blivet-gui
         - cockpit
         - fastfetch
+        - ImageMagick
         - inxi
         - jp2a
         - tailscale
