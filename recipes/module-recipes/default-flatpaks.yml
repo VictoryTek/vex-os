@@ -27,7 +27,7 @@ system:
     - com.rustdesk.RustDesk               # Rustdesk        
     - org.gnome.seahorse.Application      # Seahorse
     - com.simplenote.Simplenote           # Simplenote
-    - dev.deedles.Trayscale               # Tray Scale
+    #- dev.deedles.Trayscale               # Tray Scale
     - com.github.unrud.VideoDownloader    # Video Downloader
     - io.github.flattool.Warehouse        # Warehouse
 
