@@ -11,6 +11,7 @@ modules:
       copr:
         - gloriouseggroll/nobara-42
         - peterwu/rendezvous
+        - trixieua/jp2a
 
       # Put any repo GPG keys here
 
@@ -23,9 +24,12 @@ modules:
       packages:
         # System Utilities
         - blivet-gui
+        - chafa
         - cockpit
         - fastfetch
+        - ImageMagick
         - inxi
+        - jp2a
         - tailscale
         - trayscale
         - tmux

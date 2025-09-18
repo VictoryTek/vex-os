@@ -28,7 +28,7 @@ lock-enabled=false
 # Dock Settings
 [org.gnome.shell]
 disable-user-extensions=false
-enabled-extensions=['AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'background-logo@fedorahosted.org', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'nothing-to-say@extensions.gnome.wouter.bolsterl.ee', 'quick-settings-tweaks@qwreey', 'steal-my-focus-window@steal-my-focus-window', 'tilingshell@ferrarodomenico.com']
+enabled-extensions=['AlphabeticalAppGrid@stuarthayhurst', 'appindicatorsupport@rgcjonas.gmail.com', 'background-logo@fedorahosted.org', 'caffeine@patapon.info', 'dash-to-dock@micxgx.gmail.com', 'gnome-ui-tune@itstime.tech', 'blur-my-shell@aunetx', 'just-perfection-desktop@just-perfection', 'nothing-to-say@extensions.gnome.wouter.bolsterl.ee', 'quick-settings-tweaks@qwreey', 'restartto@tiagoporsch.github.io', 'steal-my-focus-window@steal-my-focus-window', 'tailscale@joaophi.github.com', 'tilingshell@ferrarodomenico.com']
 
 favorite-apps=['com.brave.Browser.desktop', 'io.gitlab.librewolf-community.desktop', 'org.gnome.Nautilus.desktop', 'com.mitchellh.ghostty.desktop', 'system-update.desktop', 'org.gnome.Boxes.desktop', 'virt-manager.desktop', 'code.desktop', 'com.discordapp.Discord.desktop']
 
