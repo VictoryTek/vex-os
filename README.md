@@ -73,6 +73,9 @@ Expect a successful signature from the maintained key in `cosign.pub`.
 ## ISO (Optional)
 If you want an installable ISO, follow the upstream guide: https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso (hosting large ISOs isn’t included here).
 
+## Changelog
+Upstream base changes (Bazzite) can be tracked here: [Changelog](https://github.com/ublue-os/bazzite/blob/main/CHANGELOG.md)
+
 ## Credits
 Built on the BlueBuild ecosystem and ublue-os Bazzite base. 
 
