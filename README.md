@@ -80,4 +80,3 @@ Upstream base changes (Bazzite) can be tracked here: [Changelog](https://github.
 Built on the BlueBuild ecosystem and ublue-os Bazzite base. 
 
 ---
-Minimal README kept intentionally short; open the recipe files under `recipes/` for full details.
