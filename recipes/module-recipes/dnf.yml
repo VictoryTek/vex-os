@@ -30,6 +30,7 @@ modules:
         - ImageMagick
         - inxi
         - jp2a
+        - pavucontrol
         - tailscale
         - trayscale
         - tmux
