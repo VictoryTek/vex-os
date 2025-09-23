@@ -2,7 +2,7 @@
 	<img src="files/system/usr/share/pixmaps/vex.png" alt="VexOS Logo" width="200" />
 </p>
 
-# Vex-OS &nbsp; [![bluebuild build badge](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml/badge.svg)](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml)
+# [![bluebuild build badge](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml/badge.svg)](https://github.com/VictoryTek/vex-os/actions/workflows/build.yml)
 
 Custom Fedora Atomic (ostree native container) image built with [BlueBuild](https://blue-build.org), based on the Bazzite GNOME variants and personalized with tooling, Flatpaks, GNOME extensions, theming, and wallpapers.
 
