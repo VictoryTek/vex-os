@@ -23,7 +23,6 @@ modules:
       packages:
         # System Utilities
         - blivet-gui
-        - chafa
         - cockpit
         - fastfetch
         - ImageMagick
