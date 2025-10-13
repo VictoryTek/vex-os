@@ -1,12 +1,12 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: vex-os-nvidia
+name: vex-os
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia
+base-image: ghcr.io/ublue-os/bazzite-gnome
 image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -14,15 +14,18 @@ image-version: stable # latest is also supported if you want new updates ASAP
 modules:
 
   - from-file: module-recipes/files.yml
-  - from-file: module-recipes/os-release-nvidia.yml
-  - from-file: module-recipes/scripts.yml
-  - from-file: module-recipes/dnf.yml
-  - from-file: module-recipes/code.yml
-  - from-file: module-recipes/default-flatpaks.yml
-  - from-file: module-recipes/gnome-extensions.yml
-  - from-file: module-recipes/just.yml
-  - from-file: module-recipes/wallpapers.yml
-  - from-file: module-recipes/gschema-overrides.yml
+  - from-file: module-recipes/os-release-cosmic.yml
+  - from-file: module-recipes/cosmic.yml
+  - from-file: module-recipes/cosmic-greeter.yml
+  #- from-file: module-recipes/scripts.yml
+  #- from-file: module-recipes/dnf.yml
+  #- from-file: module-recipes/code.yml
+  #- from-file: module-recipes/default-flatpaks.yml
+  #- from-file: module-recipes/gnome-extensions.yml
+  #- from-file: module-recipes/just.yml
+  #- from-file: module-recipes/wallpapers.yml
+  #- from-file: module-recipes/scripts.yml
+  #- from-file: module-recipes/gschema-overrides.yml
   - from-file: module-recipes/bling.yml
   
   - type: initramfs

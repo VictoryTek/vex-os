@@ -1,0 +1,10 @@
+modules:
+  # Latest build
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - ryanabx/cosmic-epoch
+    install:
+      packages:
+        - cosmic-desktop
