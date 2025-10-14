@@ -5,11 +5,11 @@ modules:
       cleanup: true
       copr:
         - ryanabx/cosmic-epoch
-#    install:
-#      packages:
-#        - cosmic-desktop
-
-    group-install:
-      with-optional: true
+    install:
       packages:
-        - cosmic-desktop-environment
+        - cosmic-desktop
+
+#    group-install:
+#      with-optional: true
+#      packages:
+#        - cosmic-desktop-environment
