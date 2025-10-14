@@ -17,14 +17,13 @@ modules:
   - from-file: module-recipes/os-release-cosmic.yml
   - from-file: module-recipes/cosmic.yml
   - from-file: module-recipes/cosmic-greeter.yml
-  #- from-file: module-recipes/scripts.yml
+  - from-file: module-recipes/scripts.yml
   #- from-file: module-recipes/dnf.yml
   #- from-file: module-recipes/code.yml
   #- from-file: module-recipes/default-flatpaks.yml
   #- from-file: module-recipes/gnome-extensions.yml
   #- from-file: module-recipes/just.yml
-  #- from-file: module-recipes/wallpapers.yml
-  #- from-file: module-recipes/scripts.yml
+  - from-file: module-recipes/wallpapers.yml
   #- from-file: module-recipes/gschema-overrides.yml
   - from-file: module-recipes/bling.yml
   
