@@ -11,6 +11,13 @@ cursor_size = 24
 mode = "Dark"
 apply_theme_global = true
 
+[wallpaper]
+# Default wallpapers (light/dark variants)
+light = "/usr/share/wallpapers/gnome-light-dark/vex-bb-light.jxl"
+dark = "/usr/share/wallpapers/gnome-light-dark/vex-bb-dark.jxl"
+# Wallpaper mode: "Zoom", "Fit", "Stretch", "Tile", "Center"
+mode = "Zoom"
+
 [desktop]
 hot_corner = false
 super_key_action = "Launcher"
@@ -29,3 +36,17 @@ sleep_inactive_battery_type = "Nothing"
 
 [screensaver]
 lock_enabled = false
+
+[dock.favorites]
+# Pinned applications (using .desktop file names)
+apps = [
+    "com.brave.Browser.desktop",
+    "io.gitlab.librewolf-community.desktop", 
+    "org.gnome.Nautilus.desktop",
+    "com.mitchellh.ghostty.desktop",
+    "system-update.desktop",
+    "org.gnome.Boxes.desktop",
+    "virt-manager.desktop",
+    "code.desktop",
+    "com.discordapp.Discord.desktop"
+]
