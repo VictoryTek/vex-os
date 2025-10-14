@@ -1,0 +1,44 @@
+[panel_0]
+name = "Panel"
+output = "All"
+anchor = "Bottom"
+layer = "Overlay"
+keyboard_interactivity = "OnDemand"
+exclusive_zone = true
+size = 48
+gap = [0, 0]
+margin = [0, 0, 0, 0]
+padding = [8, 8]
+spacing = 8
+background = [0.0, 0.0, 0.0, 0.8]
+border_radius = 0
+border_width = 0
+border_color = [1.0, 1.0, 1.0, 1.0]
+
+[[panel_0.left]]
+name = "Activities"
+
+[[panel_0.center]]
+name = "AppList"
+filter_top_levels = []
+
+[[panel_0.right]]
+name = "StatusNotifierHost"
+
+[[panel_0.right]]
+name = "Notifications"
+
+[[panel_0.right]]
+name = "Network"
+
+[[panel_0.right]]
+name = "Bluetooth"
+
+[[panel_0.right]]
+name = "Audio"
+
+[[panel_0.right]]
+name = "Battery" 
+
+[[panel_0.right]]
+name = "Time"

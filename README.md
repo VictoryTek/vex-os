@@ -31,28 +31,43 @@ Custom Fedora Atomic (ostree native container) image built with [BlueBuild](http
 ## Rebase / Install
 > Uses the [experimental native container](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable) flow.
 
-Pick ONE variant (standard or NVIDIA) and substitute below.
+Pick ONE variant and substitute below.
 
 1. Rebase first to the UNSIGNED image (installs trust policy + keys inside the image):
 ```
+# GNOME variant
 sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os:latest
-```
-OR (NVIDIA):
-```
+
+# GNOME + NVIDIA
 sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-nvidia:latest
+
+# COSMIC DE variant  
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-cosmic:latest
+
+# COSMIC DE + NVIDIA
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-cosmic-nvidia:latest
 ```
+
 2. Reboot:
 ```
 systemctl reboot
 ```
+
 3. Rebase to the SIGNED image:
 ```
+# GNOME variant
 sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os:latest
-```
-OR (NVIDIA):
-```
+
+# GNOME + NVIDIA
 sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-nvidia:latest
+
+# COSMIC DE variant
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-cosmic:latest
+
+# COSMIC DE + NVIDIA  
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-cosmic-nvidia:latest
 ```
+
 4. Reboot again:
 ```
 systemctl reboot

@@ -1,0 +1,23 @@
+[interface]
+accent = "Blue"
+application_theme = "Dark"
+density = "Standard"
+gaps = [8, 8]
+show_maximize = true
+show_minimize = true
+
+[theme]
+mode = "Dark"
+apply_theme_global = true
+
+[desktop]
+hot_corner = false
+super_key_action = "Launcher"
+workspaces_only_on_primary = false
+
+[dock]
+enable = true
+autohide = "Never"
+extend = false
+icon_size = "M"
+position = "Left"
