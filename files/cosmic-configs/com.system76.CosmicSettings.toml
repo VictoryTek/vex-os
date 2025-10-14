@@ -1,10 +1,11 @@
 [interface]
-accent = "Blue"
+accent = "Teal"
 application_theme = "Dark"
 density = "Standard"
 gaps = [8, 8]
 show_maximize = true
 show_minimize = true
+cursor_size = 24
 
 [theme]
 mode = "Dark"
@@ -21,3 +22,10 @@ autohide = "Never"
 extend = false
 icon_size = "M"
 position = "Left"
+
+[power]
+sleep_inactive_ac_type = "Nothing"
+sleep_inactive_battery_type = "Nothing"
+
+[screensaver]
+lock_enabled = false

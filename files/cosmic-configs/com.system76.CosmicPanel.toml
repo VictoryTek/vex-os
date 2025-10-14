@@ -1,7 +1,7 @@
 [panel_0]
 name = "Panel"
 output = "All"
-anchor = "Bottom"
+anchor = "Top"
 layer = "Overlay"
 keyboard_interactivity = "OnDemand"
 exclusive_zone = true
