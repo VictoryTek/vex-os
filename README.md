@@ -13,8 +13,11 @@ Custom Fedora Atomic (ostree native container) image built with [BlueBuild](http
 </p>
 
 ## Variants
-- `vex-os` (standard GNOME)
-- `vex-os-nvidia` (standard GNOME includes NVIDIA stack)
+- `vex-os` (standard GNOME DE)
+- `vex-os-nvidia` (standard GNOME DE includes NVIDIA stack)
+- `vex-os-cosmic` (standard COSMIC DE)
+- `vex-os-cosmic-nvidia` (standard COSMIC DE includes NVIDIA stack)
+
 
 ## Features (short list)
 - Gnome DE (I dont like KDE) (maybe Cosmic in the future)
