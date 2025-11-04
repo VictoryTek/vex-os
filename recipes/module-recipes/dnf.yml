@@ -26,18 +26,18 @@ modules:
         # System Utilities
         - blivet-gui
         - cockpit
-        - fastfetch
-        - ImageMagick
+        #- fastfetch
+        #- ImageMagick
         - inxi
         - pavucontrol
-        - tailscale
+        #- tailscale
         - trayscale
-        - tmux
+        #- tmux
 
         # GNOME & Theming
         - bibata-cursor-themes                                 # peterwu/rendezvous
-        - flat-remix-icon-theme
-        - gnome-session-xsession
+        #- flat-remix-icon-theme
+        #- gnome-session-xsession
         - gnome-shell-extension-background-logo
         - gnome-tweaks
 
