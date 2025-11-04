@@ -7,7 +7,7 @@ modules:
       - Dash to Dock
       - Gnome 4x UI Improvements
       - Nothing to say
-      - Quick Settings Tweaks
+      #- Quick Settings Tweaks
       - Steal my focus window
       - Tailscale QS
       - Wallpaper Slideshow
