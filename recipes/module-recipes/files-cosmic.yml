@@ -5,4 +5,4 @@ files:
   - source: system
     destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
   - source: cosmic-configs
-    destination: /etc/cosmic # system-wide COSMIC DE configuration
+    destination: /usr/share/cosmic # system-wide COSMIC configuration files

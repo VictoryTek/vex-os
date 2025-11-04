@@ -9,7 +9,9 @@ modules:
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
       copr:
-        - gloriouseggroll/nobara-42
+        #- gloriouseggroll/nobara-42
+        - atim/starship                                       # starship
+        - scottames/ghostty
         - peterwu/rendezvous
 
       # Put any repo GPG keys here
@@ -40,21 +42,21 @@ modules:
         - gnome-tweaks
 
         # Terminal & Shell Enhancements
-        - ghostty                                             # gloriouseggroll/nobara-42
-        - starship                                            # gloriouseggroll/nobara-42
+        - ghostty                                             # scottames/ghostty
+        - starship                                            # atim/starship
 
         # Container Tools & Docker
-        - buildah
+        #- buildah
         - docker-ce
         - docker-ce-cli
         - containerd.io
         - docker-buildx-plugin
         - docker-compose-plugin
-        - skopeo
+        #- skopeo
 
         # Optional Packages:
-        - guestfs-tools
-        - python3-libguestfs
+        #- guestfs-tools
+        #- python3-libguestfs
 
         # Group installs
     group-install:
