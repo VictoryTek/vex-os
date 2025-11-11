@@ -1,11 +1,11 @@
 NAME="VexOS"
-VERSION="42 (Based on Bazzite)"
+VERSION="43 (Based on Bazzite)"
 ID=vex-os
 ID_LIKE=fedora
-VERSION_ID=42
-PLATFORM_ID="platform:f42"
+VERSION_ID=43
+PLATFORM_ID="platform:f43"
 PRETTY_NAME="VexOS Cosmic Nvidia (FROM Bazzite)"
 ANSI_COLOR="0;36"
-CPE_NAME="cpe:/o:vex:os-cosmic-nvidia:42"
+CPE_NAME="cpe:/o:vex:os-cosmic-nvidia:43"
 DEFAULT_HOSTNAME="vex"
 HOME_URL="https://github.com/VictoryTek/vex-os"
