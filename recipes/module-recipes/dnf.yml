@@ -9,8 +9,8 @@ modules:
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
       copr:
-        #- gloriouseggroll/nobara-42
-        - atim/starship                                       # starship
+        #- atim/starship
+        - gloriouseggroll/nobara-43
         - scottames/ghostty
         - peterwu/rendezvous
 
@@ -26,13 +26,12 @@ modules:
         # System Utilities
         - blivet-gui
         - cockpit
-        #- fastfetch
-        #- ImageMagick
+        - fastfetch
         - inxi
         - pavucontrol
-        #- tailscale
+        - tailscale
         - trayscale
-        #- tmux
+        - tmux
 
         # GNOME & Theming
         - bibata-cursor-themes                                 # peterwu/rendezvous
@@ -42,8 +41,8 @@ modules:
         - gnome-tweaks
 
         # Terminal & Shell Enhancements
-        - ghostty                                             # scottames/ghostty
-        - starship                                            # atim/starship
+        - ghostty                                              # scottames/ghostty
+        - starship                                             # gloriouseggroll/nobara-43
 
         # Container Tools & Docker
         #- buildah
