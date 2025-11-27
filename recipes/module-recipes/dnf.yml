@@ -27,6 +27,7 @@ modules:
         - blivet-gui
         - cockpit
         - fastfetch
+        - grsync
         - inxi
         - pavucontrol
         - tailscale
