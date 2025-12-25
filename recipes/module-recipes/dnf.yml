@@ -14,6 +14,7 @@ modules:
         - gloriouseggroll/nobara-43
         - scottames/ghostty
         - peterwu/rendezvous
+        - ublue-os/staging
 
       # Put any repo GPG keys here
 
@@ -41,6 +42,7 @@ modules:
         #- gnome-session-xsession
         #- gnome-shell-extension-background-logo
         - gnome-tweaks
+        - gnome-shell-extension-tailscale-gnome-qs             # ublue-os/staging
 
         # Terminal & Shell Enhancements
         - ghostty                                              # scottames/ghostty
@@ -48,6 +50,7 @@ modules:
 
         # Gaming Utilities
         - faugus-launcher                                      # faugus/faugus-launcher
+        - gamemode
 
         # Container Tools & Docker
         #- buildah
