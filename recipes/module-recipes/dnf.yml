@@ -19,7 +19,8 @@ modules:
     remove:
       packages:  
         - waydroid
-        - waydroid-selinux    
+        - waydroid-selinux
+        - NetworkManager-openvpn
 
     install:
       packages:
