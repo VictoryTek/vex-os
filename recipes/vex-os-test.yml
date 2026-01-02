@@ -1,0 +1,29 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: vex-os-test
+# description will be included in the image's metadata
+description: This is my personal OS test image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite-gnome
+image-version: stable # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+
+  - from-file: module-recipes/files.yml
+  - from-file: module-recipes/os-release.yml
+  - from-file: module-recipes/scripts.yml
+  - from-file: module-recipes/dnf.yml
+  - from-file: module-recipes/code.yml
+  - from-file: module-recipes/default-flatpaks.yml
+  - from-file: module-recipes/gnome-extensions.yml
+  - from-file: module-recipes/just.yml
+  - from-file: module-recipes/wallpapers.yml
+  - from-file: module-recipes/gschema-overrides.yml
+  - from-file: module-recipes/bling.yml
+  
+  - type: initramfs
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
