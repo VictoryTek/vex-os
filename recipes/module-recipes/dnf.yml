@@ -17,17 +17,11 @@ modules:
 
       # Put any repo GPG keys here
 
-    remove:
-      packages:  
-        - waydroid
-        - waydroid-selinux
-        #- NetworkManager-openvpn
-
     install:
       packages:
         # System Utilities
         - blivet-gui
-        - cockpit
+        #- cockpit
         - fastfetch
         - grsync
         - inxi
@@ -48,12 +42,12 @@ modules:
         - gamemode
 
         # Container Tools & Docker
-        - buildah
-        - docker-ce
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
+        #- buildah
+        #- docker-ce
+        #- docker-ce-cli
+        #- containerd.io
+        #- docker-buildx-plugin
+        #- docker-compose-plugin
         - skopeo
 
         # Dev Tool Packages:
@@ -70,7 +64,7 @@ modules:
         - pkg-config
 
         # Group installs
-#    group-install:
-#      with-optional: true
-#      packages:
-#        - virtualization
+    group-install:
+      with-optional: true
+      packages:
+        - virtualization
