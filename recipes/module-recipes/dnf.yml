@@ -53,7 +53,7 @@ modules:
       # Dev Tool Packages:
         #- flatpak-builder
         #- gtk4-devel
-        #- libadwaita-devel 
+        - libadwaita-devel 
         - glib2-devel 
         - cairo-devel
         - pango-devel 
