@@ -19,51 +19,51 @@ modules:
 
     install:
       packages:
-        # System Utilities
+      # System Utilities
         - blivet-gui
         #- cockpit
-        - fastfetch
-        - grsync
-        - inxi
-        - pavucontrol
-        - tailscale
-        - tmux
+        #- fastfetch
+        #- grsync
+        #- inxi
+        #- pavucontrol
+        #- tailscale
+        #- tmux
 
-        # GNOME & Theming
-        - bibata-cursor-themes                                 # peterwu/rendezvous
-        - gnome-tweaks
+      # GNOME & Theming
+        #- bibata-cursor-themes                                 # peterwu/rendezvous
+        #- gnome-tweaks
 
-        # Terminal & Shell Enhancements
-        - ghostty                                              # scottames/ghostty
-        - starship                                             # atim/starship
+      # Terminal & Shell Enhancements
+        #- ghostty                                              # scottames/ghostty
+        #- starship                                             # atim/starship
 
-        # Gaming Utilities
-        - faugus-launcher                                      # faugus/faugus-launcher
-        - gamemode
+      # Gaming Utilities
+        #- faugus-launcher                                      # faugus/faugus-launcher
+        #- gamemode
 
-        # Container Tools & Docker
+      # Container Tools & Docker
         #- buildah
         #- docker-ce
         #- docker-ce-cli
         #- containerd.io
         #- docker-buildx-plugin
         #- docker-compose-plugin
-        - skopeo
+        #- skopeo
 
-        # Dev Tool Packages:
-        - flatpak-builder
-        - gtk4-devel
-        - libadwaita-devel 
-        - glib2-devel 
-        - cairo-devel
-        - pango-devel 
-        - gdk-pixbuf2-devel 
-        - rust
-        - cargo
-        - gcc
-        - pkg-config
+      # Dev Tool Packages:
+        #- flatpak-builder
+        #- gtk4-devel
+        #- libadwaita-devel 
+        #- glib2-devel 
+        #- cairo-devel
+        #- pango-devel 
+        #- gdk-pixbuf2-devel 
+        #- rust
+        #- cargo
+        #- gcc
+        #- pkg-config
 
-        # Group installs
+      # Group installs
 #    group-install:
 #      with-optional: true
 #      packages:
