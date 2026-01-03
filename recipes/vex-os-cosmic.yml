@@ -18,7 +18,7 @@ modules:
       ID: vex-os
       PRETTY_NAME: VexOS Cosmic (FROM Bazzite)
 
-  - from-file: module-recipes/cosmic/files-cosmic.yml
+  - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/core/scripts.yml
   #- from-file: module-recipes/core/dnf-remove.yml
   #- from-file: module-recipes/cosmic/dnf-cosmic.yml
