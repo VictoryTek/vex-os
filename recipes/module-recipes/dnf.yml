@@ -59,12 +59,12 @@ modules:
         - pango-devel 
         - gdk-pixbuf2-devel 
         - rust
-        #- cargo
-        #- gcc
-        #- pkg-config
+        - cargo
+        - gcc
+        - pkg-config
 
       # Group installs
-#    group-install:
-#      with-optional: true
-#      packages:
-#        - virtualization
+    group-install:
+      with-optional: true
+      packages:
+        - virtualization
