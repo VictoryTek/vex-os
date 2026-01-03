@@ -21,8 +21,8 @@ modules:
       packages:
       # System Utilities
         - blivet-gui
-        #- cockpit
-        #- fastfetch
+        - cockpit
+        - fastfetch
         #- grsync
         #- inxi
         #- pavucontrol
