@@ -21,7 +21,7 @@ modules:
       packages:  
         - waydroid
         - waydroid-selinux
-        - NetworkManager-openvpn
+        #- NetworkManager-openvpn
 
     install:
       packages:
@@ -70,7 +70,7 @@ modules:
         - pkg-config
 
         # Group installs
-    group-install:
-      with-optional: true
-      packages:
-        - virtualization
+#    group-install:
+#      with-optional: true
+#      packages:
+#        - virtualization
