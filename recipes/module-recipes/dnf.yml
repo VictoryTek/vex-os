@@ -51,14 +51,14 @@ modules:
         - skopeo
 
       # Dev Tool Packages:
-        - flatpak-builder
-        - gtk4-devel
-        - libadwaita-devel 
-        - glib2-devel 
-        #- cairo-devel
-        #- pango-devel 
-        #- gdk-pixbuf2-devel 
-        #- rust
+        #- flatpak-builder
+        #- gtk4-devel
+        #- libadwaita-devel 
+        #- glib2-devel 
+        - cairo-devel
+        - pango-devel 
+        - gdk-pixbuf2-devel 
+        - rust
         #- cargo
         #- gcc
         #- pkg-config
