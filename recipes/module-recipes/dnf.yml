@@ -51,7 +51,7 @@ modules:
         - skopeo
 
       # Dev Tool Packages:
-        #- flatpak-builder
+        - flatpak-builder
         - gtk4-devel
         - libadwaita-devel 
         - glib2-devel 
