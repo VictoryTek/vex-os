@@ -1,0 +1,65 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+# Cosmic-specific dnf config - excludes COPRs without rawhide/43 builds
+modules:
+  - type: dnf
+    repos:
+      cleanup: false
+      files:
+        - https://download.docker.com/linux/fedora/docker-ce.repo
+
+      copr:
+        # faugus/faugus-launcher - EXCLUDED: no UNSET-43 chroot available
+        - atim/starship
+        - scottames/ghostty
+        - peterwu/rendezvous
+
+    install:
+      packages:
+        # System Utilities
+        - blivet-gui
+        - cockpit
+        - fastfetch
+        - grsync
+        - inxi
+        - pavucontrol
+        - tailscale
+        - tmux
+
+        # GNOME & Theming
+        - bibata-cursor-themes
+        - gnome-tweaks
+
+        # Terminal & Shell Enhancements
+        - ghostty
+        - starship
+
+        # Gaming Utilities
+        # faugus-launcher - EXCLUDED: depends on unavailable COPR
+        - gamemode
+
+        # Container Tools & Docker
+        - buildah
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+        - skopeo
+
+        # Dev Tool Packages
+        - gtk4-devel
+        - libadwaita-devel 
+        - glib2-devel 
+        - cairo-devel
+        - pango-devel 
+        - gdk-pixbuf2-devel 
+        - rust
+        - cargo
+        - gcc
+        - pkg-config
+
+    group-install:
+      with-optional: true
+      packages:
+        - virtualization
