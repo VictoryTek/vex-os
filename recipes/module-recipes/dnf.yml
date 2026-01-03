@@ -10,6 +10,7 @@ modules:
 
       copr:
         - faugus/faugus-launcher
+        - atim/starship
         #- gloriouseggroll/nobara-43
         - scottames/ghostty
         - peterwu/rendezvous
@@ -20,7 +21,7 @@ modules:
       packages:  
         - waydroid
         - waydroid-selinux
-        #- NetworkManager-openvpn
+        - NetworkManager-openvpn
 
     install:
       packages:
@@ -40,7 +41,7 @@ modules:
 
         # Terminal & Shell Enhancements
         - ghostty                                              # scottames/ghostty
-        #- starship                                             # gloriouseggroll/nobara-43
+        - starship                                             # atim/starship
 
         # Gaming Utilities
         - faugus-launcher                                      # faugus/faugus-launcher
