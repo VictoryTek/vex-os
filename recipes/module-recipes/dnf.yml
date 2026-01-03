@@ -54,7 +54,7 @@ modules:
         #- flatpak-builder
         #- gtk4-devel
         #- libadwaita-devel 
-        #- glib2-devel 
+        - glib2-devel 
         - cairo-devel
         - pango-devel 
         - gdk-pixbuf2-devel 
