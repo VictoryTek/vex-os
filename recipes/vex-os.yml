@@ -17,7 +17,7 @@ modules:
   - from-file: module-recipes/os-release.yml
   - from-file: module-recipes/scripts.yml
   - from-file: module-recipes/dnf-remove.yml
-  #- from-file: module-recipes/dnf.yml
+  - from-file: module-recipes/dnf.yml
   - from-file: module-recipes/code.yml
   - from-file: module-recipes/default-flatpaks.yml
   - from-file: module-recipes/gnome-extensions.yml

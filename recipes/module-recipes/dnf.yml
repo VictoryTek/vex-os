@@ -30,12 +30,12 @@ modules:
         - tmux
 
       # GNOME & Theming
-        - bibata-cursor-themes                                 # peterwu/rendezvous
-        - gnome-tweaks
+        #- bibata-cursor-themes                                 # peterwu/rendezvous
+        #- gnome-tweaks
 
       # Terminal & Shell Enhancements
-        - ghostty                                              # scottames/ghostty
-        - starship                                             # atim/starship
+        #- ghostty                                              # scottames/ghostty
+        #- starship                                             # atim/starship
 
       # Gaming Utilities
         #- faugus-launcher                                      # faugus/faugus-launcher
