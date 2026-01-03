@@ -13,18 +13,18 @@ image-version: stable # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
 
-  - from-file: module-recipes/files.yml
-  - from-file: module-recipes/os-release.yml
-  - from-file: module-recipes/scripts.yml
-  - from-file: module-recipes/dnf-remove.yml
-  - from-file: module-recipes/dnf.yml
-  - from-file: module-recipes/code.yml
-  - from-file: module-recipes/default-flatpaks.yml
-  - from-file: module-recipes/gnome-extensions.yml
-  - from-file: module-recipes/just.yml
-  - from-file: module-recipes/wallpapers.yml
-  - from-file: module-recipes/gschema-overrides.yml
-  - from-file: module-recipes/bling.yml
+  - from-file: module-recipes/gnome/files.yml
+  - from-file: module-recipes/gnome/os-release.yml
+  - from-file: module-recipes/core/scripts.yml
+  - from-file: module-recipes/core/dnf-remove.yml
+  - from-file: module-recipes/gnome/dnf.yml
+  - from-file: module-recipes/core/code.yml
+  - from-file: module-recipes/core/default-flatpaks.yml
+  - from-file: module-recipes/gnome/gnome-extensions.yml
+  - from-file: module-recipes/gnome/just.yml
+  - from-file: module-recipes/core/wallpapers.yml
+  - from-file: module-recipes/gnome/gschema-overrides.yml
+  - from-file: module-recipes/core/bling.yml
   
   - type: initramfs
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
