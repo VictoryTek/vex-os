@@ -25,13 +25,13 @@ modules:
         - fastfetch
         - grsync
         - inxi
-        #- pavucontrol
+        - pavucontrol
         - tailscale
         - tmux
 
       # GNOME & Theming
-        #- bibata-cursor-themes                                 # peterwu/rendezvous
-        #- gnome-tweaks
+        - bibata-cursor-themes                                 # peterwu/rendezvous
+        - gnome-tweaks
 
       # Terminal & Shell Enhancements
         #- ghostty                                              # scottames/ghostty
