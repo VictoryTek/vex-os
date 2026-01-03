@@ -23,11 +23,11 @@ modules:
         - blivet-gui
         - cockpit
         - fastfetch
-        #- grsync
-        #- inxi
+        - grsync
+        - inxi
         #- pavucontrol
-        #- tailscale
-        #- tmux
+        - tailscale
+        - tmux
 
       # GNOME & Theming
         #- bibata-cursor-themes                                 # peterwu/rendezvous
