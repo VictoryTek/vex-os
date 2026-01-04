@@ -1,6 +1,0 @@
-modules:
-  # Setup cosmic greeter as DM
-  - type: systemd
-    system:
-      enabled:
-        - cosmic-greeter
