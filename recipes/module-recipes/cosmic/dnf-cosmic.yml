@@ -10,8 +10,8 @@ modules:
 
       copr:
 #        - atim/starship
-        - scottames/ghostty
-#        - peterwu/rendezvous
+#        - scottames/ghostty
+        - peterwu/rendezvous
 
       # Put any repo GPG keys here
 
@@ -28,11 +28,11 @@ modules:
         - tmux
 
       # GNOME & Theming
-#        - bibata-cursor-themes                                 # peterwu/rendezvous
+        - bibata-cursor-themes                                 # peterwu/rendezvous
         - gnome-tweaks
 
       # Terminal & Shell Enhancements
-        - ghostty                                              # scottames/ghostty
+#        - ghostty                                              # scottames/ghostty
 #        - starship                                             # atim/starship
 
       # Gaming Utilities
