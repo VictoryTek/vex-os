@@ -16,7 +16,7 @@ modules:
     properties:
       NAME: Vex-OS
       ID: vex-os
-      PRETTY_NAME: VexOS Cosmic (FROM Bazzite)
+      PRETTY_NAME: VexOS Cosmic (FROM Silverblue)
 
   - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/core/scripts.yml
