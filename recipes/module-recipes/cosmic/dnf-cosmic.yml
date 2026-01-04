@@ -29,37 +29,37 @@ modules:
 
       # GNOME & Theming
 #        - bibata-cursor-themes                                 # peterwu/rendezvous
-#        - gnome-tweaks
+        - gnome-tweaks
 
       # Terminal & Shell Enhancements
 #        - ghostty                                              # scottames/ghostty
 #        - starship                                             # atim/starship
 
       # Gaming Utilities
-#        - gamemode
+        - gamemode
 
       # Container Tools & Docker
-#        - buildah
-#        - docker-ce
-#        - docker-ce-cli
-#        - containerd.io
-#        - docker-buildx-plugin
-#        - docker-compose-plugin
-#        - skopeo
+        - buildah
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+        - docker-buildx-plugin
+        - docker-compose-plugin
+        - skopeo
 
       # Dev Tool Packages:
         #- flatpak-builder
-#        - gtk4-devel
-#        - libadwaita-devel 
-#        - glib2-devel 
-#        - cairo-devel
-#        - pango-devel 
-#        - gdk-pixbuf2-devel 
-#        - rust
-#        - cargo
-#        - gcc
-#        - pkg-config
-
+        - gtk4-devel
+        - libadwaita-devel 
+        - glib2-devel 
+        - cairo-devel
+        - pango-devel 
+        - gdk-pixbuf2-devel 
+        - rust
+        - cargo
+        - gcc
+        - pkg-config
+        
       # Group installs
 #    group-install:
 #      with-optional: true
