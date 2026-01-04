@@ -59,9 +59,9 @@ modules:
         - cargo
         - gcc
         - pkg-config
-        
+
       # Group installs
-#    group-install:
-#      with-optional: true
-#      packages:
-#        - virtualization
+    group-install:
+      with-optional: true
+      packages:
+        - virtualization
