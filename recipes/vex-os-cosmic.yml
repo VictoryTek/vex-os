@@ -20,8 +20,7 @@ modules:
 
   - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/core/scripts.yml
-  #- from-file: module-recipes/core/dnf-remove.yml
-  #- from-file: module-recipes/cosmic/dnf-cosmic.yml
+  - from-file: module-recipes/cosmic/dnf-cosmic.yml
   - from-file: module-recipes/core/code.yml
   - from-file: module-recipes/core/default-flatpaks.yml
   - from-file: module-recipes/core/wallpapers.yml

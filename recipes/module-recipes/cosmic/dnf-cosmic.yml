@@ -1,22 +1,23 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
-# Cosmic-specific dnf config - excludes COPRs without rawhide/43 builds
 modules:
   - type: dnf
+    #source: ghcr.io/blue-build/modules/dnf:dnf-module
     repos:
-      cleanup: false
+      cleanup: false # clean up added repos after module is done
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
       copr:
-        # faugus/faugus-launcher - EXCLUDED: no UNSET-43 chroot available
         - atim/starship
         - scottames/ghostty
         - peterwu/rendezvous
 
+      # Put any repo GPG keys here
+
     install:
       packages:
-        # System Utilities
+      # System Utilities
         - blivet-gui
         - cockpit
         - fastfetch
@@ -26,19 +27,18 @@ modules:
         - tailscale
         - tmux
 
-        # GNOME & Theming
-        - bibata-cursor-themes
+      # GNOME & Theming
+        - bibata-cursor-themes                                 # peterwu/rendezvous
         - gnome-tweaks
 
-        # Terminal & Shell Enhancements
-        - ghostty
-        - starship
+      # Terminal & Shell Enhancements
+        - ghostty                                              # scottames/ghostty
+        - starship                                             # atim/starship
 
-        # Gaming Utilities
-        # faugus-launcher - EXCLUDED: depends on unavailable COPR
+      # Gaming Utilities
         - gamemode
 
-        # Container Tools & Docker
+      # Container Tools & Docker
         - buildah
         - docker-ce
         - docker-ce-cli
@@ -47,7 +47,8 @@ modules:
         - docker-compose-plugin
         - skopeo
 
-        # Dev Tool Packages
+      # Dev Tool Packages:
+        #- flatpak-builder
         - gtk4-devel
         - libadwaita-devel 
         - glib2-devel 
@@ -59,6 +60,7 @@ modules:
         - gcc
         - pkg-config
 
+      # Group installs
     group-install:
       with-optional: true
       packages:
