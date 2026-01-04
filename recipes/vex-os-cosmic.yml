@@ -12,6 +12,14 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
+  - type: os-release
+    properties:
+      ID: vex-os-cosmic
+      NAME: VexOS Cosmic
+      PRETTY_NAME: VexOS Cosmic
+      HOME_URL: "https://github.com/VictoryTek/test-os"
+      BUG_REPORT_URL: "https://github.com/VictoryTek/test-os/issues"
+      DEFAULT_HOSTNAME: vex-os-cosmic
 
   - from-file: module-recipes/cosmic/os-release-cosmic.yml
   - from-file: module-recipes/core/files.yml

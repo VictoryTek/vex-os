@@ -14,9 +14,12 @@ image-version: stable # latest is also supported if you want new updates ASAP
 modules:
   - type: os-release
     properties:
-      NAME: Vex-OS-Test
-      ID: vex-os-test
-      PRETTY_NAME: Vex-OS-Test
+      ID: vex-os
+      NAME: VexOS Test
+      PRETTY_NAME: VexOS Test
+      HOME_URL: "https://github.com/VictoryTek/test-os"
+      BUG_REPORT_URL: "https://github.com/VictoryTek/test-os/issues"
+      DEFAULT_HOSTNAME: vex-os
 
   - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/core/scripts.yml
