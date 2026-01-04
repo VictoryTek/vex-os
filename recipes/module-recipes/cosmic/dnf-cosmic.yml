@@ -8,9 +8,9 @@ modules:
       files:
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
-#      copr:
+      copr:
 #        - atim/starship
-#        - scottames/ghostty
+        - scottames/ghostty
 #        - peterwu/rendezvous
 
       # Put any repo GPG keys here
@@ -32,7 +32,7 @@ modules:
         - gnome-tweaks
 
       # Terminal & Shell Enhancements
-#        - ghostty                                              # scottames/ghostty
+        - ghostty                                              # scottames/ghostty
 #        - starship                                             # atim/starship
 
       # Gaming Utilities
