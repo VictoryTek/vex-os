@@ -1,5 +1,5 @@
 NAME="VexOS"
-VERSION="43 (Based on Bazzite)"
+VERSION="43 (Based on Silverblue)"
 ID=vex-os
 ID_LIKE=fedora
 VERSION_ID=43
