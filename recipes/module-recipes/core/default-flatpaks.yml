@@ -20,7 +20,6 @@ system:
     - io.gitlab.librewolf-community       # LibreWolf Browser
     - io.missioncenter.MissionCenter      # Mission Center
     - org.onlyoffice.desktopeditors       # Only Office
-    - dev.overlayed.Overlayed             # Overlayed
     - org.freedesktop.Piper               # Piper
     - org.prismlauncher.PrismLauncher     # Prism Launcher
     - com.vysp3r.ProtonPlus               # ProtonPlus
