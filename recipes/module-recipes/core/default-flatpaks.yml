@@ -28,6 +28,7 @@ system:
     - com.simplenote.Simplenote                 # Simplenote
     - com.github.unrud.VideoDownloader          # Video Downloader
     - io.github.flattool.Warehouse              # Warehouse
+    
   remove:
     - org.gnome.eog
     - io.github.nokse22.Exhibit
