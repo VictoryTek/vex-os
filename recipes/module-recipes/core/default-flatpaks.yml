@@ -3,32 +3,31 @@ notify: true # Send notification after install/uninstall is finished (true/false
 system:
   # If no repo information is specified, Flathub will be used by default
   install:
-    - org.audacityteam.Audacity           # Audacity
-    - com.bitwarden.desktop               # Bitwarden
-    - io.github.dvlv.boxbuddyrs           # BoxBuddy
-    - org.gnome.Boxes                     # Boxes
-    - com.brave.Browser                   # Brave Browser
-    - com.discordapp.Discord              # Discord
-    - com.mattjakeman.ExtensionManager    # Extension Manager
-    - com.github.tchx84.Flatseal          # FlatSeal
-    - io.freetubeapp.FreeTube             # FreeTube
-    - it.mijorus.gearlever                # Gearlever
-    - io.github.shiftey.Desktop           # Github Desktop
-    - org.gimp.GIMP                       # GIMP
-    - org.gnome.TextEditor                # Gnome Text Editor
-    - org.gnome.Loupe                     # Image Viewer
-    - io.gitlab.librewolf-community       # LibreWolf Browser
-    - io.missioncenter.MissionCenter      # Mission Center
-    - org.onlyoffice.desktopeditors       # Only Office
-    - org.freedesktop.Piper               # Piper
-    - org.prismlauncher.PrismLauncher     # Prism Launcher
-    - com.vysp3r.ProtonPlus               # ProtonPlus
-    - com.rustdesk.RustDesk               # Rustdesk        
-    - org.gnome.seahorse.Application      # Seahorse
-    - com.simplenote.Simplenote           # Simplenote
-    - com.github.unrud.VideoDownloader    # Video Downloader
-    - io.github.flattool.Warehouse        # Warehouse
-
+    - org.audacityteam.Audacity                 # Audacity
+    - com.bitwarden.desktop                     # Bitwarden
+    - io.github.dvlv.boxbuddyrs                 # BoxBuddy
+    - org.gnome.Boxes                           # Boxes
+    - com.brave.Browser                         # Brave Browser
+    - io.github.pol_rivero.github-desktop-plus  # GitHub Desktop Plus
+    - com.discordapp.Discord                    # Discord
+    - com.mattjakeman.ExtensionManager          # Extension Manager
+    - com.github.tchx84.Flatseal                # FlatSeal
+    - io.freetubeapp.FreeTube                   # FreeTube
+    - it.mijorus.gearlever                      # Gearlever
+    - org.gimp.GIMP                             # GIMP
+    - org.gnome.TextEditor                      # Gnome Text Editor
+    - org.gnome.Loupe                           # Image Viewer
+    - io.gitlab.librewolf-community             # LibreWolf Browser
+    - io.missioncenter.MissionCenter            # Mission Center
+    - org.onlyoffice.desktopeditors             # Only Office
+    - org.freedesktop.Piper                     # Piper
+    - org.prismlauncher.PrismLauncher           # Prism Launcher
+    - com.vysp3r.ProtonPlus                     # ProtonPlus
+    - com.rustdesk.RustDesk                     # Rustdesk        
+    - org.gnome.seahorse.Application            # Seahorse
+    - com.simplenote.Simplenote                 # Simplenote
+    - com.github.unrud.VideoDownloader          # Video Downloader
+    - io.github.flattool.Warehouse              # Warehouse
   remove:
     - org.gnome.eog
     - io.github.nokse22.Exhibit
