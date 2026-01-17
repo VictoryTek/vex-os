@@ -1,0 +1,6 @@
+modules:
+  - type: justfiles
+    validate: false
+    include:
+    - generate_iso.just
+    - nix.just

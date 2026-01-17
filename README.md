@@ -73,6 +73,29 @@ sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-co
 systemctl reboot
 ```
 
+### Testing Variant (Optional)
+To rebase to the test variant for development/testing purposes:
+
+1. Rebase to UNSIGNED test image:
+```
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-test:latest
+```
+
+2. Reboot:
+```
+systemctl reboot
+```
+
+3. Rebase to SIGNED test image:
+```
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-test:latest
+```
+
+4. Reboot again:
+```
+systemctl reboot
+```
+
 The `latest` tag tracks the newest build, but the Fedora release stays fixed to what the recipe specifies until manually changed.
 
 ## Updating
