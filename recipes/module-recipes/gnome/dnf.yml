@@ -27,6 +27,8 @@ modules:
         - inxi
         - pavucontrol
         - tailscale
+        - tlp
+        - tlp-rdw
         - tmux
 
       # GNOME & Theming
