@@ -26,6 +26,7 @@ system:
     - com.rustdesk.RustDesk                     # Rustdesk        
     - org.gnome.seahorse.Application            # Seahorse
     - com.simplenote.Simplenote                 # Simplenote
+    - com.github.d4nj1.tlpui                    # TLPUI
     - com.github.unrud.VideoDownloader          # Video Downloader
     - io.github.flattool.Warehouse              # Warehouse
     
