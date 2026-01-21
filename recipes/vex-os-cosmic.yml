@@ -27,6 +27,7 @@ modules:
   - from-file: module-recipes/cosmic/dnf-cosmic.yml
   - from-file: module-recipes/core/code.yml
   - from-file: module-recipes/core/default-flatpaks.yml
+  - from-file: module-recipes/core/just.yml
   - from-file: module-recipes/core/wallpapers.yml
   - from-file: module-recipes/core/bling.yml
   
