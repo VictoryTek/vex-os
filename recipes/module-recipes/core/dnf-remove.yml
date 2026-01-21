@@ -6,3 +6,4 @@ modules:
       packages:  
         - waydroid
         - waydroid-selinux
+        - brew
