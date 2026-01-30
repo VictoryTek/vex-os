@@ -10,8 +10,7 @@ modules:
 
       copr:
         - faugus/faugus-launcher
-        #- atim/starship
-        - gloriouseggroll/nobara-43
+        - atim/starship
         - scottames/ghostty
         - peterwu/rendezvous
 
@@ -35,7 +34,7 @@ modules:
 
       # Terminal & Shell Enhancements
         - ghostty                                              # scottames/ghostty
-        - starship                                             # gloriouseggroll/nobara-43
+        - starship                                             # atim/starship
 
       # Gaming Utilities
         - faugus-launcher                                      # faugus/faugus-launcher
