@@ -24,15 +24,6 @@ modules:
   - from-file: module-recipes/core/wallpapers.yml
   - from-file: module-recipes/gnome/gschema-overrides.yml
   - from-file: module-recipes/core/bling.yml
-  
-  - type: os-release
-    properties:
-      ID: vex-os
-      NAME: VexOS Test
-      PRETTY_NAME: VexOS Test
-      HOME_URL: "https://github.com/VictoryTek/test-os"
-      BUG_REPORT_URL: "https://github.com/VictoryTek/test-os/issues"
-      DEFAULT_HOSTNAME: vex-os
 
   - type: initramfs
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
