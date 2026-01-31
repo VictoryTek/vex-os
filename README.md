@@ -41,11 +41,8 @@ sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os:late
 # GNOME + NVIDIA
 sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-nvidia:latest
 
-# COSMIC DE variant  
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-cosmic:latest
-
-# COSMIC DE + NVIDIA
-sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-cosmic-nvidia:latest
+# GNOME + NVIDIA
+sudo rpm-ostree rebase ostree-unverified-registry:ghcr.io/victorytek/vex-os-nvidia-legacy:latest
 ```
 
 2. Reboot:
@@ -61,11 +58,8 @@ sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os:la
 # GNOME + NVIDIA
 sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-nvidia:latest
 
-# COSMIC DE variant
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-cosmic:latest
-
-# COSMIC DE + NVIDIA  
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-cosmic-nvidia:latest
+# GNOME + NVIDIA + Legacy
+sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os-nvidia-legacy:latest
 ```
 
 4. Reboot again:
@@ -97,15 +91,6 @@ systemctl reboot
 ```
 
 The `latest` tag tracks the newest build, but the Fedora release stays fixed to what the recipe specifies until manually changed.
-
-## Updating
-Stay on the same variant:
-```
-sudo rpm-ostree upgrade
-```
-Or explicitly rebase again (helpful if you changed channels):
-```
-sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/victorytek/vex-os:latest
 ```
 
 ## Verification (Supply Chain)
