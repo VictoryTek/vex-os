@@ -30,7 +30,7 @@ jobs:
           - vex-os-nvidia.yml
           - vex-os.yml
           - vex-os-cosmic.yml
-          #- vex-os-cosmic-nvidia.yml
+          - vex-os-cosmic-nvidia.yml
           - vex-os-test.yml
 
     steps:
