@@ -14,7 +14,6 @@ image-version: latest # latest is also supported if you want new updates ASAP
 modules:
 
   - from-file: module-recipes/core/files.yml
-  - from-file: module-recipes/test/os-release-test.yml
   - from-file: module-recipes/test/scripts.yml
   #- from-file: module-recipes/core/dnf-remove.yml
   - from-file: module-recipes/test/dnf.yml
@@ -25,6 +24,7 @@ modules:
   - from-file: module-recipes/core/wallpapers.yml
   - from-file: module-recipes/test/gschema-overrides.yml
   - from-file: module-recipes/core/bling.yml
+  - from-file: module-recipes/test/os-release-test.yml
 
   - type: initramfs
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
