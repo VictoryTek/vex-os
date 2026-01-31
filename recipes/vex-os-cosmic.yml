@@ -13,7 +13,7 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # you can include multiple instances of the same module
 modules:
 
-  - from-file: module-recipes/cosmic/os-release-cosmic.yml
+  #- from-file: module-recipes/cosmic/os-release-cosmic.yml
   - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/core/scripts.yml
   - from-file: module-recipes/cosmic/dnf-cosmic.yml
