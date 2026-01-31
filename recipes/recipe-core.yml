@@ -1,0 +1,126 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: systemd
+    system:
+      masked:
+        - NetworkManager-wait-online.service
+        - flatpak-add-fedora-repos.service
+        - bootc-fetch-apply-updates.timer
+
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - lihaohong/yazi
+        - alternateved/eza
+        - atim/starship
+        - dejan/rpms
+        - peterwu/rendezvous
+        - sneexy/zen-browser
+        - lilay/topgrade
+        - lilay/origami-linux
+        - lilay/gigawatt
+        - lilay/tealdeer
+        - varlad/zellij
+        - dejan/lazygit
+      files:
+        - https://pkg.cloudflareclient.com/cloudflare-warp-ascii.repo
+      keys:
+        - https://pkg.cloudflareclient.com/pubkey.gpg
+    install:
+      packages:
+        - origami-update-applet
+        - oru
+        - gigawatt
+        - fish
+        - lazygit
+        - helix
+        - procs
+        - du-dust
+        - neovim
+        - python3-neovim
+        - zellij
+        - topgrade
+        - zen-browser
+        - rsms-inter-fonts
+        - google-noto-sans-myanmar-fonts
+        - google-noto-serif-myanmar-fonts
+        - bibata-cursor-themes
+        - cloudflare-warp
+        - lolcat
+        - figlet
+        - cowsay
+        - btop
+        - fastfetch
+        - podman-compose
+        - axel
+        - aria2
+        - cava
+        - bat
+        - ripgrep
+        - zoxide
+        - yazi
+        - eza
+        - hyperfine
+        - starship
+        - cbonsai
+        - cmatrix
+        - tty-clock
+        - sudo-rs
+        - uutils-coreutils
+        - byobu
+        - micro
+        - system-config-printer
+        - steam-devices
+        - repo: copr:copr.fedorainfracloud.org:lilay:tealdeer
+          packages:
+            - tealdeer
+    remove:
+      auto-remove: true
+      packages:
+        - cosmic-player
+        - firefox
+        - firefox-langpacks
+        - gnome-disk-utility
+        - gnome-system-monitor
+        - ark
+        - htop
+        - vim
+        - nvtop
+        - just
+        - toolbox
+        - google-noto-color-emoji-fonts
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
+      url-fonts:
+        - name: NotoColorEmoji
+          url: https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf
+        - name: Maple-Mono-NF
+          url: https://github.com/subframe7536/maple-font/releases/download/v7.9/MapleMono-NF-unhinted.zip
+
+  - type: default-flatpaks
+    configurations:
+      - notify: false
+        scope: user
+        repo:
+          name: flathub
+          title: Flathub
+      - notify: false
+        scope: user
+        repo:
+          name: cosmic
+          title: COSMIC
+          url: https://apt.pop-os.org/cosmic/cosmic.flatpakrepo
+
+  - type: script
+    scripts:
+      - install-theme.sh
+      - cleanup.sh

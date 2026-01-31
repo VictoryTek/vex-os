@@ -32,6 +32,7 @@ jobs:
           - vex-os-cosmic.yml
           - vex-os-cosmic-nvidia.yml
           - vex-os-test.yml
+          - recipe-base.yml
 
     steps:
       # the build is fully handled by the reusable github action
