@@ -17,8 +17,8 @@ dnf -y remove \
 # Clean up kernel modules directory
 rm -rf /usr/lib/modules/*
 
-# Enable CachyOS kernel repository
-dnf -y copr enable bieszczaders/kernel-cachyos
+# Enable CachyOS kernel repository with explicit chroot
+dnf -y copr enable bieszczaders/kernel-cachyos fedora-43-x86_64
 
 # Install CachyOS kernel with weak dependencies disabled
 dnf -y install --setopt=install_weak_deps=False \
