@@ -27,7 +27,7 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - vex-os-nvidia.yml
+          #- vex-os-nvidia.yml
           - vex-os.yml
           - vex-os-cosmic.yml
           - vex-os-cosmic-nvidia.yml
