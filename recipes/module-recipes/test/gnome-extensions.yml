@@ -1,0 +1,16 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+modules:
+  - type: gnome-extensions
+    install:
+      - Alphabetical App Grid
+      - Dash to Dock
+      - Free Space Indicator
+      - GameMode Shell Extension
+      - Gnome 4x UI Improvements
+      - Nothing to say
+      #- Quick Settings Tweaks
+      - Steal my focus window
+      - Tailscale Status
+      #- Tailscale QS
+      - Wallpaper Slideshow
