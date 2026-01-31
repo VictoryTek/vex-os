@@ -12,7 +12,7 @@ modules:
         - name: faugus/faugus-launcher
           chroot: fedora-43-x86_64
         - name: atim/starship
-          chrot: fedora-43-x86_64
+          chroot: fedora-43-x86_64
         - name: scottames/ghostty
           chroot: fedora-43-x86_64
         - name: peterwu/rendezvous
