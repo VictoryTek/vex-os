@@ -29,12 +29,12 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - vex-os-nvidia.yml
           - vex-os.yml
+          - vex-os-nvidia.yml
+          - vex-os-nvidial-legacy.yml
           - vex-os-cosmic.yml
           - vex-os-cosmic-nvidia.yml
           - vex-os-test.yml
-          - recipe-base.yml
 
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
