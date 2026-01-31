@@ -29,9 +29,8 @@ jobs:
           # !! Add your recipes here
           - vex-os-nvidia.yml
           - vex-os.yml
-          #- vex-os-cosmic.yml
-          #- vex-os-cosmic-nvidia.yml
           - vex-os-test.yml
+          - vex-os-nvidia-legacy.yml
 
     steps:
       # the build is fully handled by the reusable github action
