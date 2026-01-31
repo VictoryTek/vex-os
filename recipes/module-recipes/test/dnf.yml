@@ -12,25 +12,13 @@ modules:
         - name: faugus/faugus-launcher
           chroot: fedora-43-x86_64
         - name: atim/starship
-          chroot: fedora-43-x86_64
+          chrot: fedora-43-x86_64
         - name: scottames/ghostty
           chroot: fedora-43-x86_64
         - name: peterwu/rendezvous
           chroot: fedora-43-x86_64
-        - name: bieszczaders/kernel-cachyos
-          chroot: fedora-43-x86_64
 
       # Put any repo GPG keys here
-
-    # Replace stock kernel with CachyOS kernel
-    replace:
-      - from-repo: copr:copr.fedorainfracloud.org:bieszczaders:kernel-cachyos
-        packages:
-          - kernel
-          - kernel-core
-          - kernel-modules
-          - kernel-modules-core
-          - kernel-modules-extra
 
     install:
       packages:
