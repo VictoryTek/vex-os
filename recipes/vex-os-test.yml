@@ -28,7 +28,6 @@ modules:
   - type: os-release
     properties:
       ID: vex-os
-      ID_LIKE: fedora
       NAME: VexOS Test
       PRETTY_NAME: VexOS Test
       HOME_URL: "https://github.com/VictoryTek/test-os"
