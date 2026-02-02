@@ -15,7 +15,7 @@ modules:
 
   - from-file: module-recipes/core/files.yml
   - from-file: module-recipes/gnome/os-release.yml
-  - from-file: module-recipes/core/scripts.yml
+  - from-file: module-recipes/gnome/scripts.yml
   - from-file: module-recipes/core/dnf-remove.yml
   - from-file: module-recipes/gnome/dnf.yml
   - from-file: module-recipes/core/code.yml
