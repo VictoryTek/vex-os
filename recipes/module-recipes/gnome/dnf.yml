@@ -9,7 +9,7 @@ modules:
         - https://download.docker.com/linux/fedora/docker-ce.repo
 
       copr:
-        - faugus/faugus-launcher
+        #- faugus/faugus-launcher
         - atim/starship
         - scottames/ghostty
         - peterwu/rendezvous
@@ -37,17 +37,17 @@ modules:
         - starship                                             # atim/starship
 
       # Gaming Utilities
-        - faugus-launcher                                      # faugus/faugus-launcher
+        #- faugus-launcher                                      # faugus/faugus-launcher
         - gamemode
 
       # Container Tools & Docker
-        - buildah
-        - docker-ce
-        - docker-ce-cli
-        - containerd.io
-        - docker-buildx-plugin
-        - docker-compose-plugin
-        - skopeo
+        #- buildah
+        #- docker-ce
+        #- docker-ce-cli
+        #- containerd.io
+        #- docker-buildx-plugin
+        #- docker-compose-plugin
+        #- skopeo
 
       # Dev Tool Packages:
         #- flatpak-builder
