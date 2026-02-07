@@ -41,7 +41,7 @@ modules:
         - gamemode
 
       # Container Tools & Docker
-        - podman-compose
+        #- podman-compose
         #- buildah
         #- docker-ce
         #- docker-ce-cli
