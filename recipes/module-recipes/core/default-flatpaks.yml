@@ -5,7 +5,7 @@ system:
   install:
     - org.audacityteam.Audacity                 # Audacity
     - com.bitwarden.desktop                     # Bitwarden
-    - io.github.dvlv.boxbuddyrs                 # BoxBuddy
+    #- io.github.dvlv.boxbuddyrs                 # BoxBuddy
     - org.gnome.Boxes                           # Boxes
     - com.brave.Browser                         # Brave Browser
     - io.github.pol_rivero.github-desktop-plus  # GitHub Desktop Plus
@@ -28,6 +28,7 @@ system:
     - com.simplenote.Simplenote                 # Simplenote
     - com.github.unrud.VideoDownloader          # Video Downloader
     - io.github.flattool.Warehouse              # Warehouse
+    - app.zen_browser.zen
     
   remove:
     - org.gnome.eog
